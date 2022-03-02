@@ -35,8 +35,6 @@ async function initDb () {
 		console.log(error);
 		fastify.log.error(error);
 	});
-
-	await pool.connect();
 }
 
 async function start () {
